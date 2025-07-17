@@ -9,9 +9,9 @@ function Login() {
   const { backendUrl, getUserData, setIsLogged } = useContext(AppContext);
   const navigate = useNavigate();
   const [state, setState] = useState("signup");
-  const [name, setName] = useState();
-  const [email, setEmail] = useState();
-  const [password, setPassword] = useState();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleSubmit = async (e) => {
     try {
